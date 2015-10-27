@@ -40,8 +40,6 @@ class PullNations extends Command
     {
         $downloader = new Downloader();
 
-        var_dump($downloader->getData());
-
-        $this->info('Heya');
+        var_dump($downloader->buildNations());
     }
 }
