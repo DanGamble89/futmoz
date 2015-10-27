@@ -5,11 +5,10 @@ namespace App\Console\Commands;
 use App\Downloader;
 use Illuminate\Console\Command;
 
-class PullNations extends Command
+class PullLeagues extends Command
 {
-    protected $signature = 'pull:nations';
-
-    protected $description = "Pull nation data from EA's JSON and create nations";
+    protected $signature = 'pull:leagues';
+    protected $description = "Pull league data from EA's JSON and create leagues";
 
     public function __construct()
     {
@@ -20,8 +19,8 @@ class PullNations extends Command
     {
         $downloader = new Downloader();
 
-        $downloader->buildNations();
+        $downloader->buildLeagues();
 
-        $this->info('Nations pulled');
+        $this->info('Leagues pulled');
     }
 }

@@ -2,11 +2,12 @@
 
 namespace App;
 
+use App\Models\League;
 use App\Models\Nation;
+
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Promise;
-use Psr\Http\Message\ResponseInterface;
 
 class Downloader
 {
@@ -34,11 +35,11 @@ class Downloader
         $totalPages = $this->getTotalPages();
         $data = [];
 
-        for($i = 1; $i <= $totalPages; $i++) {
+        for ($i = 1; $i <= $totalPages; $i++) {
             $res = $this->client->get("https://www.easports.com/uk/fifa/ultimate-team/api/fut/item?jsonParamObject=%7B%22page%22:{$i}%7D");
             $json = json_decode($res->getBody());
 
-            echo "Got page {$i}\r\n";
+            echo "Got page {$i}/{$totalPages}\r\n";
 
             foreach ($json->items as $key => $item) {
                 $nation = $item->nation;
@@ -68,5 +69,43 @@ class Downloader
         }
 
         return 'Nations built';
+    }
+
+    private function getLeagueData()
+    {
+        $totalPages = $this->getTotalPages();
+        $data = [];
+
+        for ($i = 1; $i <= $totalPages; $i++) {
+            $res = $this->client->get("https://www.easports.com/uk/fifa/ultimate-team/api/fut/item?jsonParamObject=%7B%22page%22:{$i}%7D");
+            $json = json_decode($res->getBody());
+
+            echo "Got page {$i}/{$totalPages}\r\n";
+
+            foreach ($json->items as $key => $item) {
+                $league = $item->league;
+
+                array_push($data, [
+                    'name'      => $league->name,
+                    'slug'      => $league->name,
+                    'name_abbr' => $league->abbrName,
+                    'ea_id'     => $league->id,
+                    'img'       => $league->imgUrl,
+                ]);
+            }
+        }
+
+        return $data;
+    }
+
+    public function buildLeagues()
+    {
+        $leagues = $this->getLeagueData();
+
+        foreach ($leagues as $league) {
+            League::firstOrCreate($league);
+        }
+
+        return 'Leagues built';
     }
 }
