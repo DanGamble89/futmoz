@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Inspire::class,
         \App\Console\Commands\PullNations::class,
         \App\Console\Commands\PullLeagues::class,
+        \App\Console\Commands\PullClubs::class,
     ];
 
     /**

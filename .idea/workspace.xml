@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581925f1-f57a-4ee1-aba4-e2d1e16bff93" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Console/Commands/PullClubs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Downloader.php" afterPath="$PROJECT_DIR$/app/Downloader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/PullNations.php" afterPath="$PROJECT_DIR$/app/Console/Commands/PullNations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/League.php" afterPath="$PROJECT_DIR$/app/Models/League.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="futmoz.iws" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="Downloader.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Downloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46734694">
-              <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.5795918">
+              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -52,12 +53,15 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_10_25_114657_create_nations_table.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Models/Nation.php" />
-        <option value="$PROJECT_DIR$/app/Models/League.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_27_202554_create_leagues_table.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Pull.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/PullNations.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/PullLeagues.php" />
+        <option value="$PROJECT_DIR$/app/Models/Club.php" />
+        <option value="$PROJECT_DIR$/app/Models/League.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_10_27_212626_create_clubs_table.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/PullClubs.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Downloader.php" />
       </list>
     </option>
@@ -371,9 +375,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/dangamble/Code/futmoz/app/Console/Commands/PullLeagues.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/dangamble/Code/futmoz/app/Downloader.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Console/Commands" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models" />
     </key>
@@ -641,51 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/League.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20204082">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <marker date="1445977606000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445977606000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_25_114657_create_nations_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33673468">
-          <caret line="20" column="46" selection-start-line="16" selection-start-column="12" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_202554_create_leagues_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33673468">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13469388">
@@ -697,21 +659,6 @@
             <marker date="1445700144000" expanded="false" signature="-1:-1" placeholder=" The console command description. ..." />
             <marker date="1445700144000" expanded="false" signature="-1:-1" placeholder=" Execute the console command. ..." />
             <marker date="1445700144000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26938775">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder=" The Artisan commands provided by your application. ..." />
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder=" Define the application's command schedule. ..." />
-            <marker date="1445980200000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1319,6 +1266,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Club.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2244898">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <marker date="1445982034000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982034000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/League.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24693878">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_202554_create_leagues_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33673468">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_25_114657_create_nations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2244898">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445773649000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1445773649000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/PullLeagues.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4489796">
@@ -1332,10 +1335,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29183674">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder=" The Artisan commands provided by your application. ..." />
+            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder=" Define the application's command schedule. ..." />
+            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/PullClubs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4489796">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <marker date="1445982250000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445982250000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982250000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982250000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_212626_create_clubs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4489796">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <marker date="1445982213000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982213000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445982213000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Downloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46734694">
-          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.5795918">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding />
         </state>
       </provider>
