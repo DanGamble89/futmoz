@@ -5,6 +5,7 @@ namespace App;
 use App\Models\Club;
 use App\Models\League;
 use App\Models\Nation;
+use App\Models\Player;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
@@ -161,5 +162,115 @@ class Downloader
         }
 
         return 'Clubs built';
+    }
+
+    private function getPlayerData()
+    {
+        $totalPages = $this->getTotalPages();
+        $data = [];
+
+        for ($i = 1; $i <= $totalPages; $i++) {
+            $res = $this->client->get("https://www.easports.com/uk/fifa/ultimate-team/api/fut/item?jsonParamObject=%7B%22page%22:{$i}%7D");
+            $json = json_decode($res->getBody());
+
+            echo "Got page {$i}/{$totalPages}\r\n";
+
+            foreach ($json->items as $key => $item) {
+                $player = $item;
+                $playerData = [
+                    'common_name'        => $player->commonName ? $player->commonName : "{$player->firstName} {$player->lastName}",
+                    'first_name'         => $player->firstName,
+                    'last_name'          => $player->lastName,
+                    'card_name'          => $player->name,
+                    'img'                => $player->headshotImgUrl,
+                    'img_small'          => $player->headshot->smallImgUrl,
+                    'img_medium'         => $player->headshot->medImgUrl,
+                    'img_large'          => $player->headshot->largeImgUrl,
+                    'img_totw_medium'    => $player->specialImages->medTOTWImgUrl,
+                    'img_totw_large'     => $player->specialImages->largeTOTWImgUrl,
+                    'slug'               => $player->name,
+                    'ea_id'              => $player->baseId,
+                    'ea_unique_id'       => intval($player->id),
+                    'position'           => $player->position,
+                    'position_full'      => $player->positionFull,
+                    'play_style'         => $player->playStyle,
+                    'play_style_id'      => $player->playStyleId,
+                    'height'             => $player->height,
+                    'weight'             => $player->weight,
+                    'birthdate'          => $player->birthdate,
+                    'overall_rating'     => $player->rating,
+                    'acceleration'       => $player->acceleration,
+                    'aggression'         => $player->aggression,
+                    'agility'            => $player->agility,
+                    'balance'            => $player->balance,
+                    'ball_control'       => $player->ballcontrol,
+                    'crossing'           => $player->crossing,
+                    'curve'              => $player->curve,
+                    'dribbling'          => $player->dribbling,
+                    'finishing'          => $player->finishing,
+                    'free_kick_accuracy' => $player->freekickaccuracy,
+                    'gk_diving'          => $player->gkdiving,
+                    'gk_handling'        => $player->gkhandling,
+                    'gk_kicking'         => $player->gkkicking,
+                    'gk_positioning'     => $player->gkpositioning,
+                    'gk_reflexes'        => $player->gkreflexes,
+                    'heading_accuracy'   => $player->headingaccuracy,
+                    'interceptions'      => $player->interceptions,
+                    'jumping'            => $player->jumping,
+                    'long_passing'       => $player->longpassing,
+                    'long_shots'         => $player->longshots,
+                    'marking'            => $player->marking,
+                    'penalties'          => $player->penalties,
+                    'positioning'        => $player->positioning,
+                    'potential'          => $player->potential,
+                    'reactions'          => $player->reactions,
+                    'short_passing'      => $player->shortpassing,
+                    'shot_power'         => $player->shotpower,
+                    'sliding_tackle'     => $player->slidingtackle,
+                    'sprint_speed'       => $player->sprintspeed,
+                    'standing_tackle'    => $player->standingtackle,
+                    'stamina'            => $player->stamina,
+                    'strength'           => $player->strength,
+                    'vision'             => $player->vision,
+                    'volleys'            => $player->volleys,
+                    'foot'               => $player->foot,
+                    'weak_foot'          => $player->weakFoot,
+                    'skill_moves'        => $player->skillMoves,
+                    'workrate_att'       => $player->atkWorkRate,
+                    'workrate_def'       => $player->defWorkRate,
+                    'player_type'        => $player->playerType,
+                    'item_type'          => $player->itemType,
+                    'card_att_1'         => $player->attributes[0]->value,
+                    'card_att_2'         => $player->attributes[1]->value,
+                    'card_att_3'         => $player->attributes[2]->value,
+                    'card_att_4'         => $player->attributes[3]->value,
+                    'card_att_5'         => $player->attributes[4]->value,
+                    'card_att_6'         => $player->attributes[5]->value,
+                    'quality'            => $player->quality,
+                    'color'              => $player->color,
+                    'is_gk'              => $player->isGK,
+                    'is_special_type'    => $player->isSpecialType,
+                    'traits'             => (string)implode(",", (array)$player->traits),
+                    'specialities'       => (string)implode(",", (array)$player->specialities),
+                ];
+
+                if (!in_array($playerData, $data, true)) {
+                    array_push($data, $playerData);
+                }
+            }
+        }
+
+        return $data;
+    }
+
+    public function buildPlayers()
+    {
+        $players = $this->getPlayerData();
+
+        foreach ($players as $player) {
+            Player::firstOrCreate($player);
+        }
+
+        return 'Players built';
     }
 }

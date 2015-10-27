@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581925f1-f57a-4ee1-aba4-e2d1e16bff93" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Console/Commands/PullClubs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Console/Commands/PullPlayers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Downloader.php" afterPath="$PROJECT_DIR$/app/Downloader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/League.php" afterPath="$PROJECT_DIR$/app/Models/League.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/dangamble.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/dangamble.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="futmoz.iws" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="Downloader.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Downloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5795918">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.4489796">
+              <caret line="171" column="38" selection-start-line="171" selection-start-column="38" selection-end-line="171" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -62,6 +62,9 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_10_27_212626_create_clubs_table.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/PullClubs.php" />
         <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/PullPlayers.php" />
+        <option value="$PROJECT_DIR$/app/Models/Player.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_10_27_215939_create_players_table.php" />
         <option value="$PROJECT_DIR$/app/Downloader.php" />
       </list>
     </option>
@@ -382,6 +385,7 @@
       <recent name="$PROJECT_DIR$/app/Console/Commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$/app/Models" />
     </key>
   </component>
@@ -1277,34 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/League.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24693878">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_202554_create_leagues_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33673468">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_25_114657_create_nations_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2244898">
@@ -1335,21 +1311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29183674">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder=" The Artisan commands provided by your application. ..." />
-            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1445982258000" expanded="false" signature="-1:-1" placeholder=" Define the application's command schedule. ..." />
-            <marker date="1445982258000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/PullClubs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4489796">
@@ -1365,8 +1326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_212626_create_clubs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4489796">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.2244898">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="17" selection-end-column="35" />
           <folding>
             <marker date="1445982213000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1445982213000" expanded="true" signature="-1:-1" placeholder="{...}" />
@@ -1380,10 +1341,343 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_202554_create_leagues_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33673468">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445977659000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1445977659000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31428573">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <marker date="1445984820000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445984820000" expanded="false" signature="-1:-1" placeholder=" The Artisan commands provided by your application. ..." />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445984820000" expanded="false" signature="-1:-1" placeholder=" Define the application's command schedule. ..." />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/PullPlayers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49387756">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <marker date="1445984820000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445984820000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/League.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24693878">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445982041000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Player.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49387756">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding>
+            <marker date="1445985590000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445985590000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33265308">
+          <caret line="908" column="23" selection-start-line="908" selection-start-column="23" selection-end-line="908" selection-end-column="23" />
+          <folding>
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The table the blueprint describes. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The columns that should be added to the table. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The commands that should be run for the table. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The storage engine that should be used for the table. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The default character set that should be used for the table. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" The collation that should be used for the table. ..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new schema blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Execute the blueprint against the database. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the raw SQL statements for the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add the commands that are implied by the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add the index commands fluently specified on columns. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Determine if the blueprint has a create command. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the table needs to be created. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the table should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the table should be dropped if it exists. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given columns should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given columns should be renamed. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given primary key should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given unique key should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given index should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the given foreign key should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the timestamp columns should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the timestamp columns should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the soft delete column should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Indicate that the remember token column should be dropped. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Rename the table to a given name. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Specify the primary key(s) for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Specify a unique index for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Specify an index for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Specify a foreign key for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new auto-incrementing integer (4-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new auto-incrementing small integer (2-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new auto-incrementing medium integer (3-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new auto-incrementing big integer (8-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new char column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new string column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new text column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new medium text column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new long text column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new integer (4-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new tiny integer (1-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new small integer (2-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new medium integer (3-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new big integer (8-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new unsigned tiny integer (1-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new unsigned small integer (2-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new unsigned medium integer (3-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new unsigned integer (4-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new unsigned big integer (8-byte) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new float column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new double column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new decimal column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new boolean column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new enum column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new json column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new jsonb column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new date column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new date-time column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new date-time column (with time zone) on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new time column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new time column (with time zone) on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new timestamp column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new timestamp (with time zone) column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add nullable creation and update timestamps to the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add creation and update timestamps to the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add creation and update timestampTz columns to the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add a &quot;deleted at&quot; timestamp for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new binary column on the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add the proper columns for a polymorphic table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Adds the `remember_token` column to the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new drop index command on the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add a new index command to the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a default index name for the table. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add a new column to the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Remove a column from the schema blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Add a new command to the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Create a new Fluent command. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the table the blueprint describes. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the columns on the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the commands on the blueprint. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the columns on the blueprint that should be added. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="false" signature="-1:-1" placeholder=" Get the columns on the blueprint that should be changed. ..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445700140000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33265308">
+          <caret line="991" column="9" selection-start-line="991" selection-start-column="9" selection-end-line="991" selection-end-column="9" />
+          <folding>
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Make a string uppercase ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Make a string lowercase ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find the position of the first occurrence of a substring in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find position of first occurrence of a case-insensitive string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find the position of the last occurrence of a substring in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find position of last occurrence of a case-insensitive string in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Reverse a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Convert logical Hebrew text to visual text ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Convert logical Hebrew text to visual text with newline conversion ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Inserts HTML line breaks before all newlines in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Returns filename component of path ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Returns directory name component of path ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Returns information about a file path ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Un-quotes a quoted string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Un-quote string quoted with &lt;function&gt;addcslashes&lt;/function&gt; ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find first occurrence of a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Case-insensitive &lt;function&gt;strstr&lt;/function&gt; ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Find the last occurrence of a character in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Randomly shuffles a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Return information about words used in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Convert a string to an array ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Search a string for any of a set of characters ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Binary safe comparison of 2 strings from an offset, up to length characters ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Locale based string comparison ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Formats a number as a currency string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Return part of a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Replace text within a portion of a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Quote meta characters ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Make a string's first character uppercase ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Make a string's first character lowercase ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Uppercase the first character of each word in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Translate certain characters ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Quote string with slashes ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Quote string with slashes in a C style ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Strip whitespace (or other characters) from the end of a string. ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Replace all occurrences of the search string with the replacement string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Case-insensitive version of &lt;function&gt;str_replace&lt;/function&gt;. ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Repeat a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Return information about characters used in a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Split a string into smaller chunks ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Strip whitespace (or other characters) from the beginning and end of a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Strip whitespace (or other characters) from the beginning of a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Strip HTML and PHP tags from a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Calculate the similarity between two strings ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Split a string by string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Join array elements with a string ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" &amp;Alias; &lt;function&gt;implode&lt;/function&gt; ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Set locale information ..." />
+            <marker date="1439883336000" expanded="true" signature="-1:-1" placeholder=" Get numeric formatting information ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_215939_create_players_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5836735">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <marker date="1445986148000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1445986148000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445986148000" expanded="false" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1445986148000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445986148000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445986148000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445986148000" expanded="false" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1445986148000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Downloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5795918">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.4489796">
+          <caret line="171" column="38" selection-start-line="171" selection-start-column="38" selection-end-line="171" selection-end-column="38" />
           <folding />
         </state>
       </provider>
