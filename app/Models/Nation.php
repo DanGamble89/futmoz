@@ -10,4 +10,9 @@ class Nation extends Model
         'name', 'slug', 'name_abbr', 'ea_id', 'img', 'img_small', 'img_medium',
         'img_large'
     ];
+
+    public function leagues()
+    {
+        return $this->hasMany('App\Models\League');
+    }
 }

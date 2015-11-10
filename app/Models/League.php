@@ -9,6 +9,11 @@ class League extends Model
     protected $fillable = [
         'name', 'slug', 'name_abbr', 'ea_id', 'img', 'img_dark_small',
         'img_dark_medium', 'img_dark_large', 'img_light_small',
-        'img_light_medium', 'img_light_large'
+        'img_light_medium', 'img_light_large', 'nation_id'
     ];
+
+    public function nation()
+    {
+        return $this->belongsTo('App\Models\Nation', 'ea_id', 'nation_id');
+    }
 }

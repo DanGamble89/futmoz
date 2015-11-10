@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\PullLeagues::class,
         \App\Console\Commands\PullClubs::class,
         \App\Console\Commands\PullPlayers::class,
+        \App\Console\Commands\ConnectLeaguesToNations::class
     ];
 
     /**
